@@ -36,6 +36,18 @@
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="apple-touch-icon" href="img/favicon.svg">
     
+    <!-- Theme initialization (prevents flash) -->
+    <script>
+        (function() {
+            const storedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = storedTheme || (systemPrefersDark ? 'dark' : 'light');
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,6 +130,17 @@
                         </div>
                     </li>
                 </ul>
+                <div class="theme-toggle">
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
                 <div class="language-switcher language-switcher-desktop">
                     <button class="language-switcher-btn" id="languageSwitcherBtn" aria-label="Language selector">
                         <span class="language-switcher-current" id="currentLanguage">CZ</span>
