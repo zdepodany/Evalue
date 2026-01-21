@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eValue - Technologická společnost poskytující inovativní řešení">
+    <title>eValue.group - Agile solutions</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home" class="logo-link">
+                        <img src="img/logo.svg" alt="eValue" class="logo-img">
+                        <img src="img/logotype.svg" alt="eValue.cz" class="logotype-img">
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link" data-i18n="nav.home">Domů</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav.services">Služby</a></li>
+                    <li><a href="#products" class="nav-link" data-i18n="nav.products">Produkty</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">O nás</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontakt</a></li>
+                    <li class="language-switcher-mobile">
+                        <div class="language-switcher">
+                            <button class="language-switcher-btn" id="languageSwitcherBtnMobile" aria-label="Language selector">
+                                <span class="language-switcher-current" id="currentLanguageMobile">CZ</span>
+                                <svg class="language-switcher-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="language-switcher-dropdown" id="languageDropdownMobile">
+                                <button class="language-option active" data-lang="cs">
+                                    <span>Čeština</span>
+                                </button>
+                                <button class="language-option" data-lang="en">
+                                    <span>English</span>
+                                </button>
+                                <button class="language-option" data-lang="de">
+                                    <span>Deutsch</span>
+                                </button>
+                                <button class="language-option" data-lang="bg">
+                                    <span>Български</span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="language-switcher language-switcher-desktop">
+                    <button class="language-switcher-btn" id="languageSwitcherBtn" aria-label="Language selector">
+                        <span class="language-switcher-current" id="currentLanguage">CZ</span>
+                        <svg class="language-switcher-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="language-switcher-dropdown" id="languageDropdown">
+                        <button class="language-option active" data-lang="cs">
+                            <span>Čeština</span>
+                        </button>
+                        <button class="language-option" data-lang="en">
+                            <span>English</span>
+                        </button>
+                        <button class="language-option" data-lang="de">
+                            <span>Deutsch</span>
+                        </button>
+                        <button class="language-option" data-lang="bg">
+                            <span>Български</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line" data-i18n="hero.title1">Dáváme život</span>
+                    <span class="title-line highlight" data-i18n="hero.title2">vašemu podnikání</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Tvoříme digitální produkty a aplikace, které pomáhají firmám růst a fungovat efektivněji.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.contact">Kontaktovat</a>
+                    <a href="#services" class="btn btn-secondary" data-i18n="hero.services">Naše služby</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <img src="img/techLogos/reactlogo.svg" alt="React" class="tech-logo">
+                </div>
+                <div class="floating-card card-2">
+                    <img src="img/techLogos/nodejslogo.svg" alt="Node.js" class="tech-logo">
+                </div>
+                <div class="floating-card card-3">
+                    <img src="img/techLogos/mongodblogo.svg" alt="MongoDB" class="tech-logo">
+                </div>
+                <div class="floating-card card-4">
+                    <img src="img/techLogos/html5logo.svg" alt="HTML5" class="tech-logo">
+                </div>
+                <div class="floating-card card-5">
+                    <img src="img/techLogos/awslogo.svg" alt="AWS" class="tech-logo">
+                </div>
+                <div class="floating-card card-6">
+                    <img src="img/techLogos/mysqllogo.svg" alt="MySQL" class="tech-logo">
+                </div>
+                <div class="floating-card card-7">
+                    <img src="img/techLogos/csslogo.svg" alt="CSS" class="tech-logo">
+                </div>
+                <div class="floating-card card-8">
+                    <img src="img/techLogos/typescriptlogo.svg" alt="TypeScript" class="tech-logo">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="services.label">Naše služby</span>
+                <h2 class="section-title" data-i18n="services.title">Co děláme</h2>
+                <p class="section-description" data-i18n="services.description">
+                    Vytváříme vlastní software a rozšiřujeme vaše týmy o zkušené vývojáře.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-i18n="services.agile.title">eValue Agile Team</h3>
+                    <p class="service-description" data-i18n="services.agile.description">
+                        Agilní tým pro vývoj vlastního softwaru na míru. Spolupracujeme podle vašich preferencí – Time & Material nebo Fixed Price.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-i18n="services.bodyShopping.title">eValue Body Shopping</h3>
+                    <p class="service-description" data-i18n="services.bodyShopping.description">
+                        Rychlé rozšíření vašeho týmu o zkušené specialisty. Projektoví manažeři, architekti a vývojáři pro krátkodobé i střednědobé projekty.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-i18n="services.development.title">Vývoj aplikací</h3>
+                    <p class="service-description" data-i18n="services.development.description">
+                        Vytváříme moderní aplikace a systémy na různých technologiích (PHP, .NET, JAVA, React), které zvyšují efektivitu vašeho podnikání.
+                    </p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <p class="services-cta-text" data-i18n="services.cta.text">Chcete probrat konkrétní projekt?</p>
+                <a href="#contact" class="btn btn-primary" data-i18n="services.cta.button">Pojďme se domluvit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="products.label">Produkty</span>
+                <h2 class="section-title" data-i18n="products.title">Naše vlastní řešení</h2>
+                <p class="section-description" data-i18n="products.description">
+                    Softwarový vývoj je nejen naší prací, ale také naší vášní, proto se nebojíme investovat do vlastních řešení.
+                </p>
+            </div>
+            
+            <!-- Segmented Control for Products -->
+            <div class="category-switch">
+                <button class="category-btn active" data-category="all">
+                    <span data-i18n="products.category.all">Vše</span>
+                </button>
+                <button class="category-btn" data-category="fire">
+                    <span data-i18n="products.category.fire">Hasičské</span>
+                </button>
+                <button class="category-btn" data-category="sport">
+                    <span data-i18n="products.category.sport">Sportovní</span>
+                </button>
+                <button class="category-btn" data-category="business">
+                    <span data-i18n="products.category.business">Business</span>
+                </button>
+            </div>
+
+            <!-- Category Content: Vše -->
+            <div class="category-content active" data-category="all">
+                <div class="products-grid">
+                    <div class="product-card" data-product-category="fire" data-product-color="#E53935">
+                        <div class="product-icon">
+                            <img src="img/productLogos/firealarmlogo.svg" alt="FireAlarm" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.fireAlarm.title">FireAlarm</h3>
+                        <p class="product-description" data-i18n="products.fireAlarm.description">
+                            Sledování výjezdů hasičů v šesti krajích ČR. Detailní rozpis vyslané techniky.
+                        </p>
+                        <a href="https://www.firealarm.cz" target="_blank" rel="noopener noreferrer" class="product-link">firealarm.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="fire" data-product-color="#E93C39">
+                        <div class="product-icon">
+                            <img src="img/productLogos/fireplanlogo.svg" alt="FirePlan" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.firePlan.title">FirePlan</h3>
+                        <p class="product-description" data-i18n="products.firePlan.description">
+                            Nejpohodlnější plánování směn pro jednotku hasičů. Neomezený počet hasičů, nastavení odbornosti, mailové upozornění.
+                        </p>
+                        <a href="https://www.fireplan.cz" target="_blank" rel="noopener noreferrer" class="product-link">fireplan.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="sport" data-product-color="#0068E0">
+                        <div class="product-icon">
+                            <img src="img/productLogos/statiflogo.svg" alt="StatiF" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.statif.title">StatiF</h3>
+                        <p class="product-description" data-i18n="products.statif.description">
+                            Rychlá evidence událostí na florbalovém hřišti. Statistika hráčů v reálném čase.
+                        </p>
+                        <a href="https://www.statif.cz" target="_blank" rel="noopener noreferrer" class="product-link">statif.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="sport" data-product-color="#0A84FF">
+                        <div class="product-icon">
+                            <img src="img/productLogos/challengemelogo.svg" alt="ChallengeMe" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.challengeMe.title">ChallengeMe</h3>
+                        <p class="product-description" data-i18n="products.challengeMe.description">
+                            Vytvářejte, spravujte a účastněte se nejrůznějších výzev se svým týmem kolegů či přátel.
+                        </p>
+                        <a href="https://www.challengeme.cz" target="_blank" rel="noopener noreferrer" class="product-link">challengeme.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="business" data-product-color="#2196F3">
+                        <div class="product-icon">
+                            <img src="img/productLogos/easyerplogo.svg" alt="EasyERP" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.easyERP.title">EasyERP</h3>
+                        <p class="product-description" data-i18n="products.easyERP.description">
+                            Mějte pod kontrolou celý svůj výrobní proces, od objednávání materiálů až po expedici.
+                        </p>
+                        <a href="https://www.easyerp.cz" target="_blank" rel="noopener noreferrer" class="product-link">easyerp.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="business" data-product-color="#007AFF">
+                        <div class="product-icon">
+                            <img src="img/productLogos/timewiselogo.svg" alt="TimeWise" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.timeWise.title">TimeWise</h3>
+                        <p class="product-description" data-i18n="products.timeWise.description">
+                            Organizace času a úkolů pro jednotlivce či celé skupiny. Přehled splněných, probíhajících a budoucích úkolů.
+                        </p>
+                        <a href="https://timewise.cz" target="_blank" rel="noopener noreferrer" class="product-link">timewise.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="business" data-product-color="#496AEC">
+                        <div class="product-icon">
+                            <img src="img/productLogos/evhardlogo.svg" alt="EvHard" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.evHard.title">EvHard</h3>
+                        <p class="product-description" data-i18n="products.evHard.description">
+                            Komplexní přehled vašeho firemního vybavení v jednoduchém kabátu. Vyzkoušení do 10 kusů vybavení zcela zdarma.
+                        </p>
+                        <a href="https://www.evhard.cz" target="_blank" rel="noopener noreferrer" class="product-link">evhard.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="business" data-product-color="#20DFBD">
+                        <div class="product-icon">
+                            <img src="img/productLogos/ecmslogo.svg" alt="eCms" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.eCms.title">eCms</h3>
+                        <p class="product-description" data-i18n="products.eCms.description">
+                            Jednoduché řešení a správa proměnných dat pro vás i vaše klienty. Tvorba a editace proměnných, generace API odkazů.
+                        </p>
+                        <a href="https://www.ecms.cz" target="_blank" rel="noopener noreferrer" class="product-link">ecms.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="business" data-product-color="#007AFF">
+                        <div class="product-icon">
+                            <img src="img/productLogos/Design system/duverujproverujlogo.svg" alt="DůvěřujPrověřuj" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.duverujProveruj.title">DůvěřujPrověřuj</h3>
+                        <p class="product-description" data-i18n="products.duverujProveruj.description">
+                            Důkladná kontrola stavu (nejen) nemovitostí, pro kupující i prodejce, budoucí nájemníky či pronájemce.
+                        </p>
+                        <a href="https://www.duverujproveruj.cz" target="_blank" rel="noopener noreferrer" class="product-link">duverujproveruj.cz →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Content: Hasičské -->
+            <div class="category-content" data-category="fire">
+                <div class="products-grid">
+                    <div class="product-card" data-product-category="fire" data-product-color="#E53935">
+                        <div class="product-icon">
+                            <img src="img/productLogos/firealarmlogo.svg" alt="FireAlarm" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.fireAlarm.title">FireAlarm</h3>
+                        <p class="product-description" data-i18n="products.fireAlarm.description">
+                            Sledování výjezdů hasičů v šesti krajích ČR. Detailní rozpis vyslané techniky.
+                        </p>
+                        <a href="https://www.firealarm.cz" target="_blank" rel="noopener noreferrer" class="product-link">firealarm.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="fire" data-product-color="#E93C39">
+                        <div class="product-icon">
+                            <img src="img/productLogos/fireplanlogo.svg" alt="FirePlan" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.firePlan.title">FirePlan</h3>
+                        <p class="product-description" data-i18n="products.firePlan.description">
+                            Nejpohodlnější plánování směn pro jednotku hasičů. Neomezený počet hasičů, nastavení odbornosti, mailové upozornění.
+                        </p>
+                        <a href="https://www.fireplan.cz" target="_blank" rel="noopener noreferrer" class="product-link">fireplan.cz →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Content: Sportovní -->
+            <div class="category-content" data-category="sport">
+                <div class="products-grid">
+                    <div class="product-card" data-product-category="sport" data-product-color="#0068E0">
+                        <div class="product-icon">
+                            <img src="img/productLogos/statiflogo.svg" alt="StatiF" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.statif.title">StatiF</h3>
+                        <p class="product-description" data-i18n="products.statif.description">
+                            Rychlá evidence událostí na florbalovém hřišti. Statistika hráčů v reálném čase.
+                        </p>
+                        <a href="https://www.statif.cz" target="_blank" rel="noopener noreferrer" class="product-link">statif.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="sport" data-product-color="#0A84FF">
+                        <div class="product-icon">
+                            <img src="img/productLogos/challengemelogo.svg" alt="ChallengeMe" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.challengeMe.title">ChallengeMe</h3>
+                        <p class="product-description" data-i18n="products.challengeMe.description">
+                            Vytvářejte, spravujte a účastněte se nejrůznějších výzev se svým týmem kolegů či přátel.
+                        </p>
+                        <a href="https://www.challengeme.cz" target="_blank" rel="noopener noreferrer" class="product-link">challengeme.cz →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Content: Business -->
+            <div class="category-content" data-category="business">
+                <div class="products-grid">
+                    <div class="product-card" data-product-category="business" data-product-color="#2196F3">
+                        <div class="product-icon">
+                            <img src="img/productLogos/easyerplogo.svg" alt="EasyERP" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.easyERP.title">EasyERP</h3>
+                        <p class="product-description" data-i18n="products.easyERP.description">
+                            Mějte pod kontrolou celý svůj výrobní proces, od objednávání materiálů až po expedici.
+                        </p>
+                        <a href="https://www.easyerp.cz" target="_blank" rel="noopener noreferrer" class="product-link">easyerp.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="business" data-product-color="#007AFF">
+                        <div class="product-icon">
+                            <img src="img/productLogos/timewiselogo.svg" alt="TimeWise" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.timeWise.title">TimeWise</h3>
+                        <p class="product-description" data-i18n="products.timeWise.description">
+                            Organizace času a úkolů pro jednotlivce či celé skupiny. Přehled splněných, probíhajících a budoucích úkolů.
+                        </p>
+                        <a href="https://timewise.cz" target="_blank" rel="noopener noreferrer" class="product-link">timewise.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="business" data-product-color="#496AEC">
+                        <div class="product-icon">
+                            <img src="img/productLogos/evhardlogo.svg" alt="EvHard" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.evHard.title">EvHard</h3>
+                        <p class="product-description" data-i18n="products.evHard.description">
+                            Komplexní přehled vašeho firemního vybavení v jednoduchém kabátu. Vyzkoušení do 10 kusů vybavení zcela zdarma.
+                        </p>
+                        <a href="https://www.evhard.cz" target="_blank" rel="noopener noreferrer" class="product-link">evhard.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="business" data-product-color="#20DFBD">
+                        <div class="product-icon">
+                            <img src="img/productLogos/ecmslogo.svg" alt="eCms" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.eCms.title">eCms</h3>
+                        <p class="product-description" data-i18n="products.eCms.description">
+                            Jednoduché řešení a správa proměnných dat pro vás i vaše klienty. Tvorba a editace proměnných, generace API odkazů.
+                        </p>
+                        <a href="https://www.ecms.cz" target="_blank" rel="noopener noreferrer" class="product-link">ecms.cz →</a>
+                    </div>
+                    <div class="product-card" data-product-category="business" data-product-color="#007AFF">
+                        <div class="product-icon">
+                            <img src="img/productLogos/Design system/duverujproverujlogo.svg" alt="DůvěřujPrověřuj" class="product-logo">
+                        </div>
+                        <h3 class="product-title" data-i18n="products.duverujProveruj.title">DůvěřujPrověřuj</h3>
+                        <p class="product-description" data-i18n="products.duverujProveruj.description">
+                            Důkladná kontrola stavu (nejen) nemovitostí, pro kupující i prodejce, budoucí nájemníky či pronájemce.
+                        </p>
+                        <a href="https://www.duverujproveruj.cz" target="_blank" rel="noopener noreferrer" class="product-link">duverujproveruj.cz →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="products-cta">
+                <p class="products-cta-text" data-i18n="products.cta.text">Zaujali jsme vás?</p>
+                <a href="#contact" class="btn btn-primary" data-i18n="products.cta.button">Kontaktovat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="references">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="references.label">Reference</span>
+                <h2 class="section-title" data-i18n="references.title">Co o nás říkají naši klienti</h2>
+                <p class="section-description" data-i18n="references.description">
+                    Přečtěte si, jak hodnotí spolupráci s eValue naši klienti.
+                </p>
+            </div>
+            <div class="references-grid">
+                <div class="reference-card">
+                    <div class="reference-logo-wrapper">
+                        <img src="img/refferals/carvagoLogo.svg" alt="Carvago" class="reference-logo">
+                    </div>
+                    <p class="reference-text" data-i18n="references.carvago">
+                        Setkali jsme se s lidmi z eValue na startu našeho nového ambiciózního projektu. Jelikož již někteří z našich investorů se společností eValue v minulosti úspěšně spolupracovali, dali jsme jim důvěru i tentokrát. Oceňujeme nejen dobré technické znalosti a zkušenosti zapojených vývojářů, ale hlavně to, že cokoliv, na čem se dohodneme, vždy beze zbytku platí.
+                    </p>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-logo-wrapper">
+                        <img src="img/refferals/finshape.svg" alt="Finshape" class="reference-logo">
+                    </div>
+                    <p class="reference-text" data-i18n="references.finshape">
+                        Naše společnost má se spoluprácí s eValue dobré zkušenosti, a proto se na ně vždy rádi obracíme jako např. při projektu redesignu internetového bankovnictví pro našeho významného klienta, kdy jsme potřebovali navýšit naše kapacity a eValue nám dodala vhodné kodéry přes bodyshopping. Dlouhodobě také spolupracujeme v oblasti Java vývoje. Díky eValue jsme také získali do interního stavu schopného Solution architekta nebo také Angular a Java vývojáře.
+                    </p>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-logo-wrapper">
+                        <img src="img/refferals/griffteamLogo.svg" alt="Griffteam" class="reference-logo">
+                    </div>
+                    <p class="reference-text" data-i18n="references.griffteam">
+                        Naše společnost je zaměřena na vývoj rozsáhlých databázových řešení pro vnitřní užití u našich klientů. V projektech, kde je nutné implementovat a na B/O část napojovat i webové portály pro retailové uživatele, se obracíme na společnost eValue. Jejich zkušený tým vždy dodal výsledný produkt v požadované kvalitě i čase a navíc se zřejmým důrazem na potřeby zákazníka.
+                    </p>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-logo-wrapper">
+                        <img src="img/refferals/inventiLogo.svg" alt="inventi" class="reference-logo">
+                    </div>
+                    <p class="reference-text" data-i18n="references.inventi">
+                        eValue je pro nás nyní již strategickým partnerem, který nás nenechal nikdy „ve štychu". Řešili jsme společně mnoho velkých projektů na různých technologiích (PHP, .NET, JAVA, React) a vždy vše probíhalo v souladu s očekáváním.
+                    </p>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-logo-wrapper">
+                        <img src="img/refferals/kosikLogo.svg" alt="Košík.cz" class="reference-logo">
+                    </div>
+                    <p class="reference-text" data-i18n="references.kosik">
+                        Vznikali jsme klasickým startupovým stylem – byl to velký „punk". :) V určité chvíli jsme si ale uvědomili, že je nutné se již z důvodu možnosti budoucího rozvoje zaměřit také na kvalitu a udržitelnost kódu. eValue dostalo za úkol přepsat celé UI do LESS a vše se podařilo. Následovalo spoustu dalších projektů – mailové šablony, přístupnost, nové marketingové microsite apod. Tým z eValue vždy odvedl a odvádí i nadále skutečně profesionální služby.
+                    </p>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-logo-wrapper">
+                        <img src="img/refferals/nanoEnergiesLogo.svg" alt="nano energies" class="reference-logo">
+                    </div>
+                    <p class="reference-text" data-i18n="references.nanoEnergies">
+                        Stáli jsme před velkou výzvou. Náš zastaralý backoffice systém již neumožňoval flexibilní reakci na potřeby trhu, a tak jsme se rozhodli implementovat systém nový na moderních technologiích. V tom okamžiku jsme se spojili s eValue. Sice jsme měli na začátku pouze pár wireframů, jak bychom si to představovali, ale eValue nám dokázalo kromě schopného vývojářského týmu také nabídnout konzultační služby na základě jejich zkušeností z energetiky. Byl to náročný projekt, ale výsledek stál za to. Díky zkušenosti s týmem eValue z tohoto velkého projektu jsme pak naše partnery požádali i o vytvoření portálu pro sdílení energií mezi výrobci energií, kteří využívají obnovitelné zdroje, a spotřebiteli.
+                    </p>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-logo-wrapper">
+                        <img src="img/refferals/protankDynamicsLogo.svg" alt="protank dynamics" class="reference-logo">
+                    </div>
+                    <p class="reference-text" data-i18n="references.protankDynamics">
+                        V rámci zkvalitňování našeho produktu PROTANK DYNAMICS, který je zaměřen na Fleet Resource Management, jsme mimo jiné připravili i projekt komplexního redesignu aplikace. Vzhledem ke značnému rozsahu projektu jsme na několik měsíců potřebovali rozšířit naše kapacity. Firma eValue nám již během 14 dnů dodala vhodné vývojáře a po skončení první vlny zadaných úprav flexibilně upravila počet vývojářů tak, aby byly maximálně využity naše kapacity. Spolupráce s eValue je příjemná jak díky jejich profesionálnímu přístupu, tak díky schopným vývojářům.
+                    </p>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-logo-wrapper">
+                        <img src="img/refferals/refreshLogo.svg" alt="refresh" class="reference-logo">
+                    </div>
+                    <p class="reference-text" data-i18n="references.refresh">
+                        Při přípravě internetové samoobsluhy pro našeho významného klienta UPC jsme v relativně krátkém termínu potřebovali vyvinout frontendovou část projektu podle našich designů, na což nám chyběly potřebné kapacity. eValue nám byla schopna rychle dodat celý tým kodérů včetně projektového manažera a testera a po dokončení projektu jsme se dohodli na úpravě počtu developerů pro zpracování dodatečných úprav. S lidmi z eValue se dobře komunikuje a těšíme se na závěrečné zhodnocení projektu v moravském sklípku.
+                    </p>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-logo-wrapper">
+                        <img src="img/refferals/summitLogo.svg" alt="summit" class="reference-logo">
+                    </div>
+                    <p class="reference-text" data-i18n="references.summit">
+                        Se společností eValue spolupracujeme již delší dobu. Díky našemu neustálému růstu potřebujeme stále více externě pokrývat realizaci našich projektů. eValue je pro nás partnerem, který dodává služby v požadované kvalitě a předem definovaném čase.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-label" data-i18n="about.label">O nás</span>
+                    <h2 class="section-title" data-i18n="about.title">Tým individuálů, který táhne za stejný konec lana</h2>
+                    <p class="about-description" data-i18n="about.description1">
+                        Jsme tým zkušených profesionálů zabývající se vývojem aplikací, kde každý z nás je individualista, 
+                        každý z nás má jiný pohled na svět a každý z nás má jiné cesty k dosažení cíle, ale vždy táhneme 
+                        za stejný konec lana. Každá překážka je pro nás výzva, kterou umíme společně pokořit, a tak jsme 
+                        pružným motorem pro růst našich klientů.
+                    </p>
+                    <p class="about-description" data-i18n="about.description2">
+                        V naší pražské kanceláři najdete především skvělé backendové vývojáře, zatímco náš frontendový tým 
+                        sídlí v Marešově vile, která je významnou kulturní památkou v krásném jihomoravském městě Znojmě, 
+                        kde nás inspirativní prostředí každý den nabíjí novou energií pro naši kreativní práci. Součástí 
+                        naší společnosti je i tým vývojářů z Bulharska.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="150">0</div>
+                            <div class="stat-label" data-i18n="about.stats.projects">Dokončených projektů</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label" data-i18n="about.stats.clients">Spokojených klientů</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label" data-i18n="about.stats.years">Let zkušeností</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="card-glow"></div>
+                        <div class="code-snippet">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span>
+                                <span class="code-variable"> innovation</span>
+                                <span class="code-operator"> =</span>
+                                <span class="code-string"> 'future'</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-keyword">let</span>
+                                <span class="code-variable"> success</span>
+                                <span class="code-operator"> =</span>
+                                <span class="code-function"> build</span>
+                                <span class="code-bracket">(</span>
+                                <span class="code-variable">innovation</span>
+                                <span class="code-bracket">)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="team.label">Tým</span>
+                <h2 class="section-title" data-i18n="team.title">Naši lidé</h2>
+                <p class="section-description" data-i18n="team.description">
+                    Seznamte se s týmem, který stojí za úspěchem našich projektů.
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconLukas.svg" alt="Lukáš" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Lukáš</h3>
+                        <p class="team-member-role" data-i18n="team.roles.founder">Zakladatel a leader</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconJitka.png" alt="Jíťa" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Jíťa</h3>
+                        <p class="team-member-role" data-i18n="team.roles.productManager">Produktová manažerka</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconHrisi.png" alt="Hristiyana" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Hristiyana</h3>
+                        <p class="team-member-role" data-i18n="team.roles.bgBusinessDeveloper">BG business developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconMichal.png" alt="Michal" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Michal</h3>
+                        <p class="team-member-role" data-i18n="team.roles.devopsLeader">DevOps specialista a Fullstack team leader</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconStanda.svg" alt="Standa" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Standa</h3>
+                        <p class="team-member-role" data-i18n="team.roles.mobileDeveloper">Mobile App Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconSerhii.png" alt="Serhii" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Serhii</h3>
+                        <p class="team-member-role" data-i18n="team.roles.fullstackDeveloper">Fullstack developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconIvo.png" alt="Ivo" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Ivo</h3>
+                        <p class="team-member-role" data-i18n="team.roles.frontendDeveloper">Frontend developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconGeorgi.png" alt="Georgi" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Georgi</h3>
+                        <p class="team-member-role" data-i18n="team.roles.fullstackDeveloper">Fullstack developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconPetr.png" alt="Petr" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Petr</h3>
+                        <p class="team-member-role" data-i18n="team.roles.fullstackDeveloper">Fullstack developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconVeni.png" alt="Venelin" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Venelin</h3>
+                        <p class="team-member-role" data-i18n="team.roles.frontendDeveloper">Frontend developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="img/team/iconPetya.png" alt="Petya" class="team-member-img">
+                    </div>
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Petya</h3>
+                        <p class="team-member-role" data-i18n="team.roles.backendDeveloper">Backend developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-footer">
+                <p class="team-footer-text" data-i18n="team.footer">
+                    ...a dalších několik externích spolupracovníků, kteří nám vždy rádi pomohou na našich projektech
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="careers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="careers.label">Koho hledáme</span>
+                <h2 class="section-title" data-i18n="careers.title">Přidej se k nám</h2>
+                <p class="section-description" data-i18n="careers.description">
+                    Hledáme nové kolegy, kteří se chtějí podílet na zajímavých projektech a růst s námi.
+                </p>
+            </div>
+            <div class="careers-grid">
+                <!-- Node.js Developer -->
+                <div class="career-card">
+                    <button class="career-card-button" data-modal="nodejs">
+                        <h3 class="career-title" data-i18n="careers.nodejs.title">Node.js vývojář</h3>
+                        <span class="career-link" data-i18n="careers.more">Více informací →</span>
+                    </button>
+                </div>
+
+                <!-- HTML/CSS Developer -->
+                <div class="career-card">
+                    <button class="career-card-button" data-modal="htmlcss">
+                        <h3 class="career-title" data-i18n="careers.htmlcss.title">HTML/CSS vývojář</h3>
+                        <span class="career-link" data-i18n="careers.more">Více informací →</span>
+                    </button>
+                </div>
+
+                <!-- React Developer -->
+                <div class="career-card">
+                    <button class="career-card-button" data-modal="react">
+                        <h3 class="career-title" data-i18n="careers.react.title">React vývojář</h3>
+                        <span class="career-link" data-i18n="careers.more">Více informací →</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal Windows -->
+            <!-- Node.js Modal -->
+            <div class="modal" id="modal-nodejs">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Zavřít" data-i18n-aria-label="careers.modal.close">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <h2 class="modal-title" data-i18n="careers.nodejs.title">Node.js vývojář</h2>
+                    <div class="career-section">
+                        <h4 class="career-section-title" data-i18n="careers.sections.requirements">Co bys měl/a umět</h4>
+                        <ul class="career-list">
+                            <li data-i18n="careers.nodejs.requirements.1">velmi dobrou znalost Node.js a JavaScriptu</li>
+                            <li data-i18n="careers.nodejs.requirements.2">solidní orientaci v PHP a práci s databázemi a knihovnami</li>
+                            <li data-i18n="careers.nodejs.requirements.3">základní přehled v HTML, CSS, Reactu a AWS</li>
+                            <li data-i18n="careers.nodejs.requirements.4">umět si říct o radu, když něco nevíš, a mít chuť se to doučit</li>
+                            <li data-i18n="careers.nodejs.requirements.5">angličtinu na úrovni, která ti umožní číst technickou dokumentaci</li>
+                        </ul>
+                    </div>
+                    <div class="career-section">
+                        <h4 class="career-section-title" data-i18n="careers.sections.appreciate">Co u tebe oceníme</h4>
+                        <ul class="career-list">
+                            <li data-i18n="careers.nodejs.appreciate.1">chuť se neustále učit a sledovat nové technologie</li>
+                            <li data-i18n="careers.nodejs.appreciate.2">týmového ducha a zdravý smysl pro humor</li>
+                            <li data-i18n="careers.nodejs.appreciate.3">zodpovědný přístup a schopnost dotahovat věci do konce</li>
+                        </ul>
+                    </div>
+                    <div class="career-section">
+                        <h4 class="career-section-title" data-i18n="careers.sections.offer">Co nabízíme</h4>
+                        <ul class="career-list">
+                            <li data-i18n="careers.nodejs.offer.1">práci na zajímavých projektech pro významné české i zahraniční klienty</li>
+                            <li data-i18n="careers.nodejs.offer.2">možnost práce z našich kanceláří ve Znojmě, Praze (Flora), Sofii nebo Plovdivu, případně remote</li>
+                            <li data-i18n="careers.nodejs.offer.3">spolupráci na HPP i IČO</li>
+                            <li data-i18n="careers.nodejs.offer.4">teambuildingy, sportovní výzvy a společné akce během roku</li>
+                            <li data-i18n="careers.nodejs.offer.5">férové finanční ohodnocení, benefity, odměny za úspěšné projekty a podporu dalšího vzdělávání</li>
+                            <li data-i18n="careers.nodejs.offer.6">kvalitní kávu, příjemné pracovní prostředí</li>
+                            <li data-i18n="careers.nodejs.offer.7">a hlavně dobrý tým a šéfa, se kterým se dá mluvit</li>
+                        </ul>
+                    </div>
+                    <div class="career-cta">
+                        <p class="career-cta-text" data-i18n="careers.cta.role">Zaujala tě tahle role?</p>
+                        <a href="mailto:katka@evalue.cz" class="btn btn-primary" data-i18n="careers.cta.contact">Napiš nám</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML/CSS Modal -->
+            <div class="modal" id="modal-htmlcss">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Zavřít" data-i18n-aria-label="careers.modal.close">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <h2 class="modal-title" data-i18n="careers.htmlcss.title">HTML/CSS vývojář</h2>
+                    <div class="career-intro">
+                        <p data-i18n="careers.htmlcss.intro">Hledáme frontendového vývojáře, kterému záleží na detailech, čistém kódu a konzistentním výstupu. Pokud máš cit pro rozhraní a baví tě ladit věci do posledního pixelu, můžeš se u nás cítit dobře.</p>
+                    </div>
+                    <div class="career-section">
+                        <h4 class="career-section-title" data-i18n="careers.sections.requirements">Co bys měl/a umět</h4>
+                        <ul class="career-list">
+                            <li data-i18n="careers.htmlcss.requirements.1">velmi dobrou znalost HTML5 a CSS3</li>
+                            <li data-i18n="careers.htmlcss.requirements.2">základní orientaci v JavaScriptu</li>
+                            <li data-i18n="careers.htmlcss.requirements.3">přehled v PHP (není nutné být backend specialista)</li>
+                            <li data-i18n="careers.htmlcss.requirements.4">umět si říct o pomoc, když něco nevíš, a mít chuť se to naučit</li>
+                            <li data-i18n="careers.htmlcss.requirements.5">angličtinu na úrovni potřebné pro práci s technickou dokumentací</li>
+                        </ul>
+                    </div>
+                    <div class="career-section">
+                        <h4 class="career-section-title" data-i18n="careers.sections.appreciate">Co u tebe oceníme</h4>
+                        <ul class="career-list">
+                            <li data-i18n="careers.htmlcss.appreciate.1">chuť se dál rozvíjet a sledovat moderní frontendové trendy</li>
+                            <li data-i18n="careers.htmlcss.appreciate.2">smysl pro detail a kvalitu výstupu</li>
+                            <li data-i18n="careers.htmlcss.appreciate.3">týmového ducha a smysl pro humor</li>
+                        </ul>
+                    </div>
+                    <div class="career-section">
+                        <h4 class="career-section-title" data-i18n="careers.sections.offer">Co nabízíme</h4>
+                        <ul class="career-list">
+                            <li data-i18n="careers.htmlcss.offer.1">práci na zajímavých projektech pro významné české i zahraniční klienty</li>
+                            <li data-i18n="careers.htmlcss.offer.2">možnost práce z kanceláří ve Znojmě, Praze (Flora), Sofii nebo Plovdivu, případně remote</li>
+                            <li data-i18n="careers.htmlcss.offer.3">spolupráci na HPP i IČO</li>
+                            <li data-i18n="careers.htmlcss.offer.4">teambuildingy, sportovní výzvy a společné akce během roku</li>
+                            <li data-i18n="careers.htmlcss.offer.5">férové finanční ohodnocení, benefity, odměny za úspěšné projekty a podporu dalšího vzdělávání</li>
+                            <li data-i18n="careers.htmlcss.offer.6">kvalitní kávu a příjemné pracovní prostředí</li>
+                            <li data-i18n="careers.htmlcss.offer.7">především dobrý tým a šéfa, se kterým se dá normálně mluvit</li>
+                        </ul>
+                    </div>
+                    <div class="career-cta">
+                        <p class="career-cta-text" data-i18n="careers.cta.position">Zaujala tě tahle pozice?</p>
+                        <a href="mailto:katka@evalue.cz" class="btn btn-primary" data-i18n="careers.cta.contact">Napiš nám</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- React Modal -->
+            <div class="modal" id="modal-react">
+                <div class="modal-overlay"></div>
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Zavřít" data-i18n-aria-label="careers.modal.close">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <h2 class="modal-title" data-i18n="careers.react.title">React vývojář</h2>
+                    <div class="career-intro">
+                        <p data-i18n="careers.react.intro">Hledáme React vývojáře, který má rád moderní frontend, čistý kód a práci na projektech, které dávají smysl v reálném provozu – od interních systémů až po aplikace s velkým počtem uživatelů.</p>
+                    </div>
+                    <div class="career-section">
+                        <h4 class="career-section-title" data-i18n="careers.sections.requirements">Co bys měl/a umět</h4>
+                        <ul class="career-list">
+                            <li data-i18n="careers.react.requirements.1">velmi dobrou znalost JavaScriptu</li>
+                            <li data-i18n="careers.react.requirements.2">praktickou zkušenost s Reactem</li>
+                            <li data-i18n="careers.react.requirements.3">dobrou orientaci v HTML a CSS</li>
+                            <li data-i18n="careers.react.requirements.4">umět si říct o radu, když něco nevíš, a mít chuť se dál učit</li>
+                            <li data-i18n="careers.react.requirements.5">angličtinu na úrovni práce s technickou dokumentací</li>
+                        </ul>
+                    </div>
+                    <div class="career-section">
+                        <h4 class="career-section-title" data-i18n="careers.sections.appreciate">Co u tebe oceníme</h4>
+                        <ul class="career-list">
+                            <li data-i18n="careers.react.appreciate.1">chuť se neustále rozvíjet a sledovat moderní frontendové technologie</li>
+                            <li data-i18n="careers.react.appreciate.2">zodpovědný přístup a smysl pro kvalitní kód</li>
+                            <li data-i18n="careers.react.appreciate.3">týmového ducha a smysl pro humor</li>
+                        </ul>
+                    </div>
+                    <div class="career-section">
+                        <h4 class="career-section-title" data-i18n="careers.sections.offer">Co nabízíme</h4>
+                        <ul class="career-list">
+                            <li data-i18n="careers.react.offer.1">práci na zajímavých projektech pro významné české i zahraniční klienty</li>
+                            <li data-i18n="careers.react.offer.2">možnost práce z kanceláří ve Znojmě, Praze (Flora), Sofii nebo Plovdivu, případně remote</li>
+                            <li data-i18n="careers.react.offer.3">spolupráci na HPP i IČO</li>
+                            <li data-i18n="careers.react.offer.4">teambuildingy, sportovní výzvy a společné akce během roku</li>
+                            <li data-i18n="careers.react.offer.5">férové finanční ohodnocení, benefity, odměny za úspěšné projekty a podporu dalšího vzdělávání</li>
+                            <li data-i18n="careers.react.offer.6">kvalitní kávu a příjemné pracovní prostředí</li>
+                            <li data-i18n="careers.react.offer.7">především dobrý tým a šéfa, se kterým se dá normálně mluvit</li>
+                        </ul>
+                    </div>
+                    <div class="career-cta">
+                        <p class="career-cta-text" data-i18n="careers.cta.role">Zaujala tě tahle role?</p>
+                        <a href="mailto:katka@evalue.cz" class="btn btn-primary" data-i18n="careers.cta.contact">Napiš nám</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="contact.label">Kontakt</span>
+                <h2 class="section-title" data-i18n="contact.title">Kontaktní formulář</h2>
+                <p class="section-description" data-i18n="contact.description">
+                    Sháníte přesně ty služby, které nabízíme? Tak nám můžete napsat rovnou odtud.
+                </p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" data-i18n="contact.name.placeholder" placeholder="Vaše jméno / firma" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" data-i18n="contact.email.placeholder" placeholder="Váš email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="phone" name="phone" data-i18n="contact.phone.placeholder" placeholder="Telefonní číslo">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" data-i18n="contact.subject.placeholder" placeholder="Co potřebujete" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" data-i18n="contact.message.placeholder" placeholder="Detailní popis vaší žádosti" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.submit">Odeslat</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- We Support Section -->
+    <section id="weSupport" class="we-support">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="weSupport.label">Podporujeme</span>
+                <h2 class="section-title" data-i18n="weSupport.title">Organizace, které podporujeme</h2>
+                <p class="section-description" data-i18n="weSupport.description">
+                    Jsme hrdí na to, že můžeme podporovat tyto organizace a jejich důležitou práci.
+                </p>
+            </div>
+            <div class="we-support-grid">
+                <a href="https://www.hasiciunanov.cz" target="_blank" rel="noopener noreferrer" class="we-support-item">
+                    <img src="img/weSupport/hasiciUnanov.svg" alt="Hasiči Únanov" class="we-support-logo">
+                </a>
+                <a href="https://www.hudebnicek.com" target="_blank" rel="noopener noreferrer" class="we-support-item">
+                    <img src="img/weSupport/hudebnicekLogo.png" alt="Hudebníček" class="we-support-logo">
+                </a>
+                <a href="https://www.kontobariery.cz" target="_blank" rel="noopener noreferrer" class="we-support-item">
+                    <img src="img/weSupport/kontoLogo.png" alt="Konto Bariéry" class="we-support-logo">
+                </a>
+                <a href="https://www.zdravotniklaun.cz" target="_blank" rel="noopener noreferrer" class="we-support-item">
+                    <img src="img/weSupport/klaunLogo.svg" alt="Zdravotní Klaun" class="we-support-logo">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="partners.label">Partneři</span>
+                <h2 class="section-title" data-i18n="partners.title">Spolupracujeme s</h2>
+            </div>
+            <div class="partners-grid">
+                <div class="partners-item">
+                    <img src="img/partners/3d4lifeLogo.svg" alt="3D4Life" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/alzaLogo.svg" alt="Alza" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/cleverlanceLogo.svg" alt="Cleverlance" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/coreItLogo.png" alt="Core IT" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/devixLogo.svg" alt="Devix" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/dotBscLogo.svg" alt="DotBSC" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/eagLogo.svg" alt="EAG" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/eprovementLogo.svg" alt="Eprovement" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/griffteamLogo.svg" alt="Griffteam" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/inventiLogo.svg" alt="Inventi" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/lundegaardLogo.svg" alt="Lundegaard" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/mallLogo.svg" alt="Mall" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/nanoEnergiesLogo.svg" alt="Nano Energies" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/oriflameLogo.svg" alt="Oriflame" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/prepayLogo.svg" alt="Prepay" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/protankDynamicsLogo.svg" alt="Protank Dynamics" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/refreshLogo.svg" alt="Refresh" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/renomiaLogo.svg" alt="Renomia" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/sprinxLogo.svg" alt="Sprinx" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/summitLogo.svg" alt="Summit" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/teamxLogo.svg" alt="TeamX" class="partners-logo">
+                </div>
+                <div class="partners-item">
+                    <img src="img/partners/valatronLogo.svg" alt="Valatron" class="partners-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="eValue" class="logo-img footer-logo-img">
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.navigation">Navigace</h4>
+                        <ul>
+                            <li><a href="#home" data-i18n="nav.home">Domů</a></li>
+                            <li><a href="#services" data-i18n="nav.services">Služby</a></li>
+                            <li><a href="#products" data-i18n="nav.products">Produkty</a></li>
+                            <li><a href="#about" data-i18n="nav.about">O nás</a></li>
+                            <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column footer-contact-column">
+                        <h4 data-i18n="footer.contact">Kontakt</h4>
+                        <div class="footer-country-switch">
+                            <button class="footer-country-btn active" data-footer-country="cz">
+                                <span data-i18n="footer.country.czech">Česko</span>
+                            </button>
+                            <button class="footer-country-btn" data-footer-country="bg">
+                                <span data-i18n="footer.country.bulgaria">Bulharsko</span>
+                            </button>
+                        </div>
+                        <div class="footer-contact-content active" data-footer-country="cz">
+                            <div class="footer-contact-item">
+                                <strong data-i18n="footer.contact.cz.headquarters">Sídlo - Praha</strong>
+                                <p>Jičínská 1616/29<br>130 00 Praha 3, Žižkov</p>
+                            </div>
+                            <div class="footer-contact-item">
+                                <strong data-i18n="footer.contact.cz.techCenter">Technologické centrum - Znojmo</strong>
+                                <p>Na Vyhlídce 1590/4<br>669 02 Znojmo</p>
+                            </div>
+                            <div class="footer-contact-item">
+                                <strong data-i18n="footer.contact.phone">Telefon:</strong>
+                                <p><a href="tel:+420277004950">+420 277 004 950</a></p>
+                            </div>
+                            <div class="footer-contact-item">
+                                <strong data-i18n="footer.contact.email">Email:</strong>
+                                <p><a href="mailto:mail@evalue.cz">mail@evalue.cz</a></p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-content" data-footer-country="bg">
+                            <div class="footer-contact-item">
+                                <strong data-i18n="footer.contact.bg.headquarters">Sídlo - Sofia</strong>
+                                <p>Bl. 33, 20 Patro, Apt. 102<br>Sofia, Slatina</p>
+                            </div>
+                            <div class="footer-contact-item">
+                                <strong data-i18n="footer.contact.phone">Telefon:</strong>
+                                <p><a href="tel:+359897719060">+359 897 719 060</a></p>
+                            </div>
+                            <div class="footer-contact-item">
+                                <strong data-i18n="footer.contact.email">Email:</strong>
+                                <p><a href="mailto:mail@evalue.bg">mail@evalue.bg</a></p>
+                            </div>
+                            <div class="footer-contact-item">
+                                <strong>eValue.bg EOOD</strong>
+                                <p>IČO: 206991976<br>DIČ: BG206991976</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright" id="footerCopyright">&copy; <span id="copyrightYear">2025</span> eValue. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
