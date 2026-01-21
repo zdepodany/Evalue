@@ -17,12 +17,12 @@ const translations = {
         
         // Services
         'services.label': 'Naše služby',
-        'services.title': 'Co děláme',
-        'services.description': 'Vytváříme vlastní software a rozšiřujeme vaše týmy o zkušené vývojáře.',
+        'services.title': 'Služby',
+        'services.description': 'Vytváříme vlastní software a rozšiřujeme vaše týmy o zkušené vývojáře pro vývoj aplikací.',
         'services.agile.title': 'eValue Agile Team',
         'services.agile.description': 'Agilní tým pro vývoj vlastního softwaru na míru. Spolupracujeme podle vašich preferencí – Time & Material nebo Fixed Price.',
         'services.bodyShopping.title': 'eValue Body Shopping',
-        'services.bodyShopping.description': 'Rychlé rozšíření vašeho týmu o zkušené specialisty. Projektoví manažeři, architekti a vývojáři pro krátkodobé i střednědobé projekty.',
+        'services.bodyShopping.description': 'Rychlé rozšíření vašeho týmu o zkušené specialisty pro vývoj softwaru. Projektoví manažeři, architekti a vývojáři pro krátkodobé i střednědobé projekty.',
         'services.development.title': 'Vývoj aplikací',
         'services.development.description': 'Vytváříme moderní aplikace a systémy na různých technologiích (PHP, .NET, JAVA, React), které zvyšují efektivitu vašeho podnikání.',
         'services.cta.text': 'Chcete probrat konkrétní projekt?',
@@ -30,7 +30,7 @@ const translations = {
         
         // Products
         'products.label': 'Produkty',
-        'products.title': 'Naše vlastní řešení',
+        'products.title': 'Produkty',
         'products.description': 'Softwarový vývoj je nejen naší prací, ale také naší vášní, proto se nebojíme investovat do vlastních řešení.',
         'products.category.all': 'Vše',
         'products.category.fire': 'Hasičské',
@@ -59,7 +59,7 @@ const translations = {
         
         // References
         'references.label': 'Reference',
-        'references.title': 'Co o nás říkají naši klienti',
+        'references.title': 'Reference',
         'references.description': 'Přečtěte si, jak hodnotí spolupráci s eValue naši klienti.',
         'references.carvago': 'Setkali jsme se s lidmi z eValue na startu našeho nového ambiciózního projektu. Jelikož již někteří z našich investorů se společností eValue v minulosti úspěšně spolupracovali, dali jsme jim důvěru i tentokrát. Oceňujeme nejen dobré technické znalosti a zkušenosti zapojených vývojářů, ale hlavně to, že cokoliv, na čem se dohodneme, vždy beze zbytku platí.',
         'references.finshape': 'Naše společnost má se spoluprácí s eValue dobré zkušenosti, a proto se na ně vždy rádi obracíme jako např. při projektu redesignu internetového bankovnictví pro našeho významného klienta, kdy jsme potřebovali navýšit naše kapacity a eValue nám dodala vhodné kodéry přes bodyshopping. Dlouhodobě také spolupracujeme v oblasti Java vývoje. Díky eValue jsme také získali do interního stavu schopného Solution architekta nebo také Angular a Java vývojáře.',
@@ -82,7 +82,7 @@ const translations = {
         
         // Team
         'team.label': 'Tým',
-        'team.title': 'Naši lidé',
+        'team.title': 'Tým',
         'team.description': 'Seznamte se s týmem, který stojí za úspěchem našich projektů.',
         'team.roles.founder': 'Zakladatel a leader',
         'team.roles.productManager': 'Produktová manažerka',
@@ -159,7 +159,7 @@ const translations = {
         
         // Contact
         'contact.label': 'Kontakt',
-        'contact.title': 'Kontaktní formulář',
+        'contact.title': 'Kontakt',
         'contact.description': 'Sháníte přesně ty služby, které nabízíme? Tak nám můžete napsat rovnou odtud.',
         'contact.name.placeholder': 'Vaše jméno / firma',
         'contact.email.placeholder': 'Váš email',
@@ -172,12 +172,12 @@ const translations = {
         
         // We Support
         'weSupport.label': 'Podporujeme',
-        'weSupport.title': 'Organizace, které podporujeme',
+        'weSupport.title': 'Podporujeme',
         'weSupport.description': 'Jsme hrdí na to, že můžeme podporovat tyto organizace a jejich důležitou práci.',
         
         // Partners
         'partners.label': 'Partneři',
-        'partners.title': 'Spolupracujeme s',
+        'partners.title': 'Partneři',
         
         // Footer
         'footer.navigation': 'Navigace',
@@ -208,12 +208,12 @@ const translations = {
         
         // Services
         'services.label': 'Our services',
-        'services.title': 'What we do',
-        'services.description': 'We create custom software and expand your teams with experienced developers.',
+        'services.title': 'Services',
+        'services.description': 'We create custom software and expand your teams with experienced developers for application development.',
         'services.agile.title': 'eValue Agile Team',
         'services.agile.description': 'An agile team for custom software development. We collaborate according to your preferences – Time & Material or Fixed Price.',
         'services.bodyShopping.title': 'eValue Body Shopping',
-        'services.bodyShopping.description': 'Quick expansion of your team with experienced specialists. Project managers, architects and developers for short-term and medium-term projects.',
+        'services.bodyShopping.description': 'Quick expansion of your team with experienced specialists for software development. Project managers, architects and developers for short-term and medium-term projects.',
         'services.development.title': 'Application Development',
         'services.development.description': 'We create modern applications and systems using various technologies (PHP, .NET, JAVA, React) that increase the efficiency of your business.',
         'services.cta.text': 'Want to discuss a specific project?',
@@ -221,7 +221,7 @@ const translations = {
         
         // Products
         'products.label': 'Products',
-        'products.title': 'Our own solutions',
+        'products.title': 'Products',
         'products.description': 'Software development is not only our work but also our passion, so we are not afraid to invest in our own solutions.',
         'products.category.all': 'All',
         'products.category.fire': 'Fire',
@@ -250,7 +250,7 @@ const translations = {
         
         // References
         'references.label': 'References',
-        'references.title': 'What our clients say about us',
+        'references.title': 'References',
         'references.description': 'Read how our clients evaluate their cooperation with eValue.',
         'references.carvago': 'We met with the people from eValue at the start of our new ambitious project. Since some of our investors had successfully worked with eValue in the past, we decided to trust them this time as well. We appreciate not only the good technical knowledge and experience of the developers involved, but above all that whatever we agree on, it always holds completely true.',
         'references.finshape': 'Our company has good experience working with eValue, and that\'s why we always like to turn to them, for example, during the project of redesigning internet banking for our significant client, when we needed to increase our capacities and eValue provided us with suitable coders through body shopping. We also cooperate long-term in the field of Java development. Thanks to eValue, we also acquired a capable Solution architect or Angular and Java developers to our internal staff.',
@@ -273,7 +273,7 @@ const translations = {
         
         // Team
         'team.label': 'Team',
-        'team.title': 'Our people',
+        'team.title': 'Team',
         'team.description': 'Meet the team behind the success of our projects.',
         'team.roles.founder': 'Founder and leader',
         'team.roles.productManager': 'Product Manager',
@@ -350,7 +350,7 @@ const translations = {
         
         // Contact
         'contact.label': 'Contact',
-        'contact.title': 'Contact form',
+        'contact.title': 'Contact',
         'contact.description': 'Looking for exactly the services we offer? You can write to us directly from here.',
         'contact.name.placeholder': 'Your name / company',
         'contact.email.placeholder': 'Your email',
@@ -363,12 +363,12 @@ const translations = {
         
         // We Support
         'weSupport.label': 'We support',
-        'weSupport.title': 'Organizations we support',
+        'weSupport.title': 'We support',
         'weSupport.description': 'We are proud to support these organizations and their important work.',
         
         // Partners
         'partners.label': 'Partners',
-        'partners.title': 'We work with',
+        'partners.title': 'Partners',
         
         // Footer
         'footer.navigation': 'Navigation',
@@ -399,12 +399,12 @@ const translations = {
         
         // Services
         'services.label': 'Unsere Dienstleistungen',
-        'services.title': 'Was wir tun',
-        'services.description': 'Wir entwickeln maßgeschneiderte Software und erweitern Ihre Teams mit erfahrenen Entwicklern.',
+        'services.title': 'Dienstleistungen',
+        'services.description': 'Wir entwickeln maßgeschneiderte Software und erweitern Ihre Teams mit erfahrenen Entwicklern für die Anwendungsentwicklung.',
         'services.agile.title': 'eValue Agile Team',
         'services.agile.description': 'Ein agiles Team für die Entwicklung maßgeschneiderter Software. Wir arbeiten nach Ihren Präferenzen zusammen – Time & Material oder Fixed Price.',
         'services.bodyShopping.title': 'eValue Body Shopping',
-        'services.bodyShopping.description': 'Schnelle Erweiterung Ihres Teams mit erfahrenen Spezialisten. Projektmanager, Architekten und Entwickler für kurzfristige und mittelfristige Projekte.',
+        'services.bodyShopping.description': 'Schnelle Erweiterung Ihres Teams mit erfahrenen Spezialisten für die Softwareentwicklung. Projektmanager, Architekten und Entwickler für kurzfristige und mittelfristige Projekte.',
         'services.development.title': 'Anwendungsentwicklung',
         'services.development.description': 'Wir erstellen moderne Anwendungen und Systeme mit verschiedenen Technologien (PHP, .NET, JAVA, React), die die Effizienz Ihres Unternehmens steigern.',
         'services.cta.text': 'Möchten Sie ein konkretes Projekt besprechen?',
@@ -412,7 +412,7 @@ const translations = {
         
         // Products
         'products.label': 'Produkte',
-        'products.title': 'Unsere eigenen Lösungen',
+        'products.title': 'Produkte',
         'products.description': 'Softwareentwicklung ist nicht nur unsere Arbeit, sondern auch unsere Leidenschaft, daher scheuen wir nicht davor zurück, in eigene Lösungen zu investieren.',
         'products.category.all': 'Alle',
         'products.category.fire': 'Feuerwehr',
@@ -441,7 +441,7 @@ const translations = {
         
         // References
         'references.label': 'Referenzen',
-        'references.title': 'Was unsere Kunden über uns sagen',
+        'references.title': 'Referenzen',
         'references.description': 'Lesen Sie, wie unsere Kunden die Zusammenarbeit mit eValue bewerten.',
         'references.carvago': 'Wir haben die Menschen von eValue am Start unseres neuen ehrgeizigen Projekts getroffen. Da einige unserer Investoren in der Vergangenheit erfolgreich mit eValue zusammengearbeitet hatten, haben wir ihnen auch dieses Mal Vertrauen geschenkt. Wir schätzen nicht nur das gute technische Wissen und die Erfahrung der beteiligten Entwickler, sondern vor allem, dass alles, worauf wir uns einigen, immer vollständig gilt.',
         'references.finshape': 'Unser Unternehmen hat gute Erfahrungen mit der Zusammenarbeit mit eValue, und deshalb wenden wir uns immer gerne an sie, zum Beispiel bei dem Projekt zur Neugestaltung des Internet-Bankings für unseren bedeutenden Kunden, als wir unsere Kapazitäten erhöhen mussten und eValue uns geeignete Programmierer über Body Shopping bereitgestellt hat. Wir arbeiten auch langfristig im Bereich Java-Entwicklung zusammen. Dank eValue haben wir auch einen fähigen Solution-Architekten oder Angular- und Java-Entwickler in unser internes Team aufgenommen.',
@@ -464,7 +464,7 @@ const translations = {
         
         // Team
         'team.label': 'Team',
-        'team.title': 'Unsere Leute',
+        'team.title': 'Team',
         'team.description': 'Lernen Sie das Team kennen, das hinter dem Erfolg unserer Projekte steht.',
         'team.roles.founder': 'Gründer und Leiter',
         'team.roles.productManager': 'Produktmanagerin',
@@ -541,7 +541,7 @@ const translations = {
         
         // Contact
         'contact.label': 'Kontakt',
-        'contact.title': 'Kontaktformular',
+        'contact.title': 'Kontakt',
         'contact.description': 'Suchen Sie genau die Dienstleistungen, die wir anbieten? Sie können uns direkt von hier aus schreiben.',
         'contact.name.placeholder': 'Ihr Name / Firma',
         'contact.email.placeholder': 'Ihre E-Mail',
@@ -554,12 +554,12 @@ const translations = {
         
         // We Support
         'weSupport.label': 'Wir unterstützen',
-        'weSupport.title': 'Organisationen, die wir unterstützen',
+        'weSupport.title': 'Wir unterstützen',
         'weSupport.description': 'Wir sind stolz darauf, diese Organisationen und ihre wichtige Arbeit zu unterstützen.',
         
         // Partners
         'partners.label': 'Partner',
-        'partners.title': 'Wir arbeiten mit',
+        'partners.title': 'Partner',
         
         // Footer
         'footer.navigation': 'Navigation',
@@ -590,12 +590,12 @@ const translations = {
         
         // Services
         'services.label': 'Нашите услуги',
-        'services.title': 'Какво правим',
-        'services.description': 'Създаваме персонализиран софтуер и разширяваме вашите екипи с опитни разработчици.',
+        'services.title': 'Услуги',
+        'services.description': 'Създаваме персонализиран софтуер и разширяваме вашите екипи с опитни разработчици за разработка на приложения.',
         'services.agile.title': 'eValue Agile Team',
         'services.agile.description': 'Гъвкав екип за разработка на персонализиран софтуер. Сътрудничим според вашите предпочитания – Time & Material или Fixed Price.',
         'services.bodyShopping.title': 'eValue Body Shopping',
-        'services.bodyShopping.description': 'Бързо разширяване на вашия екип с опитни специалисти. Управители на проекти, архитекти и разработчици за краткосрочни и средносрочни проекти.',
+        'services.bodyShopping.description': 'Бързо разширяване на вашия екип с опитни специалисти за разработка на софтуер. Управители на проекти, архитекти и разработчици за краткосрочни и средносрочни проекти.',
         'services.development.title': 'Разработка на приложения',
         'services.development.description': 'Създаваме модерни приложения и системи с различни технологии (PHP, .NET, JAVA, React), които повишават ефективността на вашия бизнес.',
         'services.cta.text': 'Искате ли да обсъдим конкретен проект?',
@@ -603,7 +603,7 @@ const translations = {
         
         // Products
         'products.label': 'Продукти',
-        'products.title': 'Нашите собствени решения',
+        'products.title': 'Продукти',
         'products.description': 'Разработката на софтуер е не само нашата работа, но и нашата страст, затова не се страхуваме да инвестираме в собствени решения.',
         'products.category.all': 'Всички',
         'products.category.fire': 'Пожарна',
@@ -632,7 +632,7 @@ const translations = {
         
         // References
         'references.label': 'Референции',
-        'references.title': 'Какво казват нашите клиенти за нас',
+        'references.title': 'Референции',
         'references.description': 'Прочетете как нашите клиенти оценяват сътрудничеството с eValue.',
         'references.carvago': 'Срещнахме се с хората от eValue в началото на нашия нов амбициозен проект. Тъй като някои от нашите инвеститори са работили успешно с eValue в миналото, решихме да им доверим и този път. Оценяваме не само добрите технически знания и опит на участващите разработчици, но преди всичко това, че всичко, на което се съгласим, винаги важи напълно.',
         'references.finshape': 'Нашата компания има добър опит в работата с eValue, и затова винаги се радваме да се обърнем към тях, например по време на проекта за преработка на интернет банкирането за нашия значим клиент, когато се нуждаехме от увеличаване на нашите капацитети и eValue ни осигури подходящи програмисти чрез body shopping. Също така работим дългосрочно в областта на Java разработката. Благодарение на eValue също приехме в нашия вътрешен екип способен Solution архитект или Angular и Java разработчици.',
@@ -655,7 +655,7 @@ const translations = {
         
         // Team
         'team.label': 'Екип',
-        'team.title': 'Нашият екип',
+        'team.title': 'Екип',
         'team.description': 'Запознайте се с екипа зад успеха на нашите проекти.',
         'team.roles.founder': 'Основател и лидер',
         'team.roles.productManager': 'Продуктов мениджър',
@@ -732,7 +732,7 @@ const translations = {
         
         // Contact
         'contact.label': 'Контакт',
-        'contact.title': 'Контактна форма',
+        'contact.title': 'Контакт',
         'contact.description': 'Търсите точно услугите, които предлагаме? Можете да ни напишете директно от тук.',
         'contact.name.placeholder': 'Вашето име / фирма',
         'contact.email.placeholder': 'Вашият имейл',
@@ -745,12 +745,12 @@ const translations = {
         
         // We Support
         'weSupport.label': 'Подкрепяме',
-        'weSupport.title': 'Организации, които подкрепяме',
+        'weSupport.title': 'Подкрепяме',
         'weSupport.description': 'Гордеем се, че можем да подкрепяме тези организации и важната им работа.',
         
         // Partners
         'partners.label': 'Партньори',
-        'partners.title': 'Работим с',
+        'partners.title': 'Партньори',
         
         // Footer
         'footer.navigation': 'Навигация',
