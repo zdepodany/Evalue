@@ -76,9 +76,9 @@ const translations = {
         'about.title': 'Tým individuálů, který táhne za stejný konec lana',
         'about.description1': 'Jsme tým zkušených profesionálů zabývající se vývojem aplikací, kde každý z nás je individualista, každý z nás má jiný pohled na svět a každý z nás má jiné cesty k dosažení cíle, ale vždy táhneme za stejný konec lana. Každá překážka je pro nás výzva, kterou umíme společně pokořit, a tak jsme pružným motorem pro růst našich klientů.',
         'about.description2': 'V naší pražské kanceláři najdete především skvělé backendové vývojáře, zatímco náš frontendový tým sídlí v Marešově vile, která je významnou kulturní památkou v krásném jihomoravském městě Znojmě, kde nás inspirativní prostředí každý den nabíjí novou energií pro naši kreativní práci. Součástí naší společnosti je i tým vývojářů z Bulharska.',
-        'about.stats.projects': 'Dokončených projektů',
-        'about.stats.clients': 'Spokojených klientů',
         'about.stats.years': 'Let zkušeností',
+        'about.stats.clients': 'Spokojených klientů',
+        'about.stats.users': 'Uživatelů našich produktů',
         
         // Team
         'team.label': 'Tým',
@@ -267,9 +267,9 @@ const translations = {
         'about.title': 'A team of individuals pulling in the same direction',
         'about.description1': 'We are a team of experienced professionals developing applications, where each of us is an individual, each of us has a different view of the world and each of us has different paths to achieve goals, but we always pull in the same direction. Every obstacle is a challenge for us that we can overcome together, making us a flexible engine for our clients\' growth.',
         'about.description2': 'In our Prague office, you will find mainly excellent backend developers, while our frontend team is located in Mareš Villa, which is a significant cultural monument in the beautiful South Moravian city of Znojmo, where the inspirational environment charges us with new energy every day for our creative work. Our company also includes a team of developers from Bulgaria.',
-        'about.stats.projects': 'Completed projects',
-        'about.stats.clients': 'Satisfied clients',
         'about.stats.years': 'Years of experience',
+        'about.stats.clients': 'Satisfied clients',
+        'about.stats.users': 'Users of our products',
         
         // Team
         'team.label': 'Team',
@@ -458,9 +458,9 @@ const translations = {
         'about.title': 'Ein Team von Individuen, die am gleichen Strang ziehen',
         'about.description1': 'Wir sind ein Team erfahrener Fachleute, die Anwendungen entwickeln, wobei jeder von uns ein Individuum ist, jeder von uns eine andere Sicht auf die Welt hat und jeder von uns unterschiedliche Wege zur Zielerreichung hat, aber wir ziehen immer am gleichen Strang. Jedes Hindernis ist eine Herausforderung für uns, die wir gemeinsam meistern können, und so sind wir ein flexibler Motor für das Wachstum unserer Kunden.',
         'about.description2': 'In unserem Prager Büro finden Sie vor allem hervorragende Backend-Entwickler, während unser Frontend-Team in der Mareš Villa ansässig ist, die ein bedeutendes Kulturdenkmal in der schönen südmährischen Stadt Znojmo ist, wo die inspirierende Umgebung uns täglich mit neuer Energie für unsere kreative Arbeit auflädt. Zu unserem Unternehmen gehört auch ein Team von Entwicklern aus Bulgarien.',
-        'about.stats.projects': 'Abgeschlossene Projekte',
-        'about.stats.clients': 'Zufriedene Kunden',
         'about.stats.years': 'Jahre Erfahrung',
+        'about.stats.clients': 'Zufriedene Kunden',
+        'about.stats.users': 'Benutzer unserer Produkte',
         
         // Team
         'team.label': 'Team',
@@ -649,9 +649,9 @@ const translations = {
         'about.title': 'Екип от индивиди, които дърпат в една посока',
         'about.description1': 'Ние сме екип от опитни професионалисти, които разработват приложения, където всеки от нас е индивидуалист, всеки от нас има различен поглед към света и всеки от нас има различни пътища за постигане на целите, но винаги дърпаме в една посока. Всяка пречка е предизвикателство за нас, което можем да преодолеем заедно, което ни прави гъвкав двигател за растежа на нашите клиенти.',
         'about.description2': 'В нашия офис в Прага ще намерите предимно отлични backend разработчици, докато нашият frontend екип се намира в вилата Mareš, която е значим културен паметник в красивия южноморавски град Зноймо, където вдъхновяващата среда ни зарежда всеки ден с нова енергия за нашата творческа работа. Нашата компания включва също екип от разработчици от България.',
-        'about.stats.projects': 'Завършени проекти',
-        'about.stats.clients': 'Доволни клиенти',
         'about.stats.years': 'Години опит',
+        'about.stats.clients': 'Доволни клиенти',
+        'about.stats.users': 'Потребители на нашите продукти',
         
         // Team
         'team.label': 'Екип',
@@ -766,7 +766,28 @@ const translations = {
     }
 };
 
-let currentLanguage = localStorage.getItem('language') || 'cs';
+// Function to detect language from domain
+function detectLanguageFromDomain() {
+    const hostname = window.location.hostname;
+    
+    // Check if domain is evalue.bg
+    if (hostname === 'evalue.bg' || hostname.endsWith('.evalue.bg')) {
+        return 'bg';
+    }
+    
+    // For other domains (evalue.cz, evalue.group), return null to use localStorage/default
+    return null;
+}
+
+let currentLanguage = (() => {
+    // First check domain-based language
+    const domainLanguage = detectLanguageFromDomain();
+    if (domainLanguage) {
+        return domainLanguage;
+    }
+    // Fall back to localStorage or default
+    return localStorage.getItem('language') || 'cs';
+})();
 
 const languageCodes = {
     cs: 'CZ',
@@ -881,8 +902,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageDropdownMobile = document.getElementById('languageDropdownMobile');
     const languageOptions = document.querySelectorAll('.language-option');
     
-    // Load saved language
-    currentLanguage = localStorage.getItem('language') || 'cs';
+    // Load language - prioritize domain-based detection
+    const domainLanguage = detectLanguageFromDomain();
+    if (domainLanguage) {
+        currentLanguage = domainLanguage;
+        // Save domain-based language to localStorage for consistency
+        localStorage.setItem('language', currentLanguage);
+    } else {
+        // Use saved language from localStorage or default
+        currentLanguage = localStorage.getItem('language') || 'cs';
+    }
     translatePage();
     
     // Function to setup language switcher

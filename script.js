@@ -156,14 +156,25 @@ document.addEventListener('DOMContentLoaded', () => {
 const animateCounter = (element, target, duration = 2000) => {
     let start = 0;
     const increment = target / (duration / 16);
+    const suffix = element.getAttribute('data-suffix') || '';
+    const formatSpace = element.hasAttribute('data-format') && element.getAttribute('data-format') === 'space';
+    
+    const formatNumber = (num) => {
+        let formatted = Math.floor(num).toString();
+        if (formatSpace && formatted.length > 3) {
+            // Add space as thousand separator
+            formatted = formatted.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+        }
+        return formatted + suffix;
+    };
     
     const updateCounter = () => {
         start += increment;
         if (start < target) {
-            element.textContent = Math.floor(start);
+            element.textContent = formatNumber(start);
             requestAnimationFrame(updateCounter);
         } else {
-            element.textContent = target;
+            element.textContent = formatNumber(target);
         }
     };
     
