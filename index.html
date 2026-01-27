@@ -94,73 +94,88 @@
                         <img src="img/logotype.svg" alt="eValue.cz" class="logotype-img">
                     </a>
                 </div>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link" data-i18n="nav.home">Domů</a></li>
-                    <li><a href="#services" class="nav-link" data-i18n="nav.services">Služby</a></li>
-                    <li><a href="#products" class="nav-link" data-i18n="nav.products">Produkty</a></li>
-                    <li><a href="#about" class="nav-link" data-i18n="nav.about">O nás</a></li>
-                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontakt</a></li>
-                    <li class="language-switcher-mobile">
-                        <div class="language-switcher">
-                            <button class="language-switcher-btn" id="languageSwitcherBtnMobile" aria-label="Language selector">
-                                <span class="language-switcher-current" id="currentLanguageMobile">CZ</span>
-                                <svg class="language-switcher-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <div class="language-switcher-dropdown" id="languageDropdownMobile">
-                                <button class="language-option active" data-lang="cs">
-                                    <span>Čeština</span>
+                <div class="nav-group">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link" data-i18n="nav.home">Domů</a></li>
+                        <li><a href="#services" class="nav-link" data-i18n="nav.services">Služby</a></li>
+                        <li><a href="#products" class="nav-link" data-i18n="nav.products">Produkty</a></li>
+                        <li><a href="#about" class="nav-link" data-i18n="nav.about">O nás</a></li>
+                        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontakt</a></li>
+                        <li class="language-switcher-mobile">
+                            <div class="language-switcher">
+                                <button class="language-switcher-btn" id="languageSwitcherBtnMobile" aria-label="Language selector">
+                                    <span class="language-switcher-current" id="currentLanguageMobile">CZ</span>
+                                    <svg class="language-switcher-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </button>
-                                <button class="language-option" data-lang="en">
-                                    <span>English</span>
-                                </button>
-                                <button class="language-option" data-lang="de">
-                                    <span>Deutsch</span>
-                                </button>
-                                <button class="language-option" data-lang="bg">
-                                    <span>Български</span>
+                                <div class="language-switcher-dropdown" id="languageDropdownMobile">
+                                    <button class="language-option active" data-lang="cs">
+                                        <span>Čeština</span>
+                                    </button>
+                                    <button class="language-option" data-lang="en">
+                                        <span>English</span>
+                                    </button>
+                                    <button class="language-option" data-lang="de">
+                                        <span>Deutsch</span>
+                                    </button>
+                                    <button class="language-option" data-lang="bg">
+                                        <span>Български</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="theme-toggle-mobile">
+                            <div class="theme-toggle">
+                                <button class="theme-toggle-btn" id="themeToggleMobile" aria-label="Toggle dark mode">
+                                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </button>
                             </div>
+                        </li>
+                    </ul>
+                    <div class="theme-toggle">
+                        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="language-switcher language-switcher-desktop">
+                        <button class="language-switcher-btn" id="languageSwitcherBtn" aria-label="Language selector">
+                            <span class="language-switcher-current" id="currentLanguage">CZ</span>
+                            <svg class="language-switcher-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="language-switcher-dropdown" id="languageDropdown">
+                            <button class="language-option active" data-lang="cs">
+                                <span>Čeština</span>
+                            </button>
+                            <button class="language-option" data-lang="en">
+                                <span>English</span>
+                            </button>
+                            <button class="language-option" data-lang="de">
+                                <span>Deutsch</span>
+                            </button>
+                            <button class="language-option" data-lang="bg">
+                                <span>Български</span>
+                            </button>
                         </div>
-                    </li>
-                </ul>
-                <div class="theme-toggle">
-                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
-                        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
-                            <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="language-switcher language-switcher-desktop">
-                    <button class="language-switcher-btn" id="languageSwitcherBtn" aria-label="Language selector">
-                        <span class="language-switcher-current" id="currentLanguage">CZ</span>
-                        <svg class="language-switcher-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="language-switcher-dropdown" id="languageDropdown">
-                        <button class="language-option active" data-lang="cs">
-                            <span>Čeština</span>
-                        </button>
-                        <button class="language-option" data-lang="en">
-                            <span>English</span>
-                        </button>
-                        <button class="language-option" data-lang="de">
-                            <span>Deutsch</span>
-                        </button>
-                        <button class="language-option" data-lang="bg">
-                            <span>Български</span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -180,7 +195,7 @@
                     <span class="title-line highlight" data-i18n="hero.title2">vašemu podnikání</span>
                 </h1>
                 <p class="hero-subtitle" data-i18n="hero.subtitle">
-                    Tvoříme digitální produkty a aplikace, které pomáhají firmám růst a fungovat efektivněji.
+                    Tvoříme software a agilní vývojové týmy, které pomáhají firmám růst efektivněji.
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary" data-i18n="hero.contact">Kontaktovat</a>
@@ -243,7 +258,7 @@
                     </div>
                     <h3 class="service-title" data-i18n="services.agile.title">eValue Agile Team</h3>
                     <p class="service-description" data-i18n="services.agile.description">
-                        Agilní tým pro vývoj vlastního softwaru na míru. Spolupracujeme podle vašich preferencí – Time & Material nebo Fixed Price.
+                        Pro firmy, které chtějí spolehlivý vývoj na míru s možností Time & Material i Fix Price.
                     </p>
                 </div>
                 <div class="service-card">
@@ -256,7 +271,7 @@
                     </div>
                     <h3 class="service-title" data-i18n="services.bodyShopping.title">eValue Body Shopping</h3>
                     <p class="service-description" data-i18n="services.bodyShopping.description">
-                        Rychlé rozšíření vašeho týmu o zkušené specialisty. Projektoví manažeři, architekti a vývojáři pro krátkodobé i střednědobé projekty.
+                        Rychlé doplnění kapacit o zkušené specialisty pro vaše projekty.
                     </p>
                 </div>
                 <div class="service-card">

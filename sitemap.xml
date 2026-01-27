@@ -5,7 +5,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://evalue.cz/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="cs" href="https://evalue.cz/?lang=cs"/>
@@ -17,49 +17,49 @@
     <!-- Main sections (anchors) -->
     <url>
         <loc>https://evalue.cz/#services</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
         <loc>https://evalue.cz/#products</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
         <loc>https://evalue.cz/#about</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://evalue.cz/#team</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
         <loc>https://evalue.cz/#careers</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://evalue.cz/#contact</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
         <loc>https://evalue.cz/#references</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2026-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>

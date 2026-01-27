@@ -30,13 +30,21 @@ function initTheme() {
     setTheme(theme);
 }
 
-// Toggle theme
+// Toggle theme function
+function handleThemeToggle() {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+}
+
+// Add event listeners to both desktop and mobile theme toggles
 if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = htmlElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-    });
+    themeToggle.addEventListener('click', handleThemeToggle);
+}
+
+const themeToggleMobile = document.getElementById('themeToggleMobile');
+if (themeToggleMobile) {
+    themeToggleMobile.addEventListener('click', handleThemeToggle);
 }
 
 // Listen for system theme changes
@@ -51,26 +59,43 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e)
 initTheme();
 
 // Mobile Menu Toggle
-const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-const navMenu = document.getElementById('navMenu');
-const navLinks = document.querySelectorAll('.nav-link');
+function initMobileMenu() {
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navLinks = document.querySelectorAll('.nav-link');
 
-mobileMenuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    mobileMenuToggle.classList.toggle('active');
-});
+    if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const isActive = navMenu.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        });
+    }
 
-// Close mobile menu when clicking on a link
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        mobileMenuToggle.classList.remove('active');
-        // Also close language dropdown if open
-        document.querySelectorAll('.language-switcher-dropdown').forEach(dropdown => {
-            dropdown.classList.remove('active');
+    // Close mobile menu when clicking on a link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu && mobileMenuToggle) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            }
+            // Also close language dropdown if open
+            document.querySelectorAll('.language-switcher-dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
         });
     });
-});
+}
+
+// Initialize mobile menu
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileMenu);
+} else {
+    initMobileMenu();
+}
 
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
